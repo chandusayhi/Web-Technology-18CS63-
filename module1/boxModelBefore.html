@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>The Box Model</title>
+<style>
+* {   /* universal selector applied to entire page coz '*' */
+	box-sizing: border-box; /*selecting model-not inherited*/
+}
+
+body {
+	margin: 0;
+	padding: 0;
+  background-color: pink; 
+}
+
+#box {
+  background-color: blue;
+  padding: 10px 10px 10px 10px; /*top right bottom left */
+  border: 5px solid black;
+  margin: 40px;
+  width: 300px;
+  
+}
+
+#content {
+  background-color: #90EE90; /*green*/
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Box Model</h1>
+
+<div id="box">
+  <div id="content">It is been a wonderful day. We are blessed to be the part of the creation. But we have forgotten to know the worth of gift given by our creator. Let us get together to save the nature. Stay safe. Stay home. </div>
+</div>
+
+
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,26 @@
+<!--in this program we are greeting the value typed in the webpage over the alert pop up -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script>
+		function greet() {
+			let name = document.querySelector("#name").value;
+			alert("hello," + name);
+		}
+
+		function listen{
+		document.querySelector("form").addEventListener("submit", greet);
+		}
+
+		document.addEventListener("DOMContentLoaded", listen);
+		
+	</script>
+	<title>Hello, Class!</title>
+</head>
+<body>
+	<form>
+		<input autocomplete="off" autofocus="on" id="name" placeholder="What's your name?" type="text">
+		<input type="submit">
+	</form>
+</body>
+</html>

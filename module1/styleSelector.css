@@ -1,0 +1,12 @@
+/* commas allow you to group selectors */
+p, div {
+color: red;
+}
+/* the above single grouped selector is equivalent to the
+following: */
+p {
+color: red;
+}
+div {
+color: blue;
+}
