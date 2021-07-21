@@ -1,0 +1,39 @@
+<!-- mouseEvent(onclick and ondbclick) -->
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function displayDate() { //onclick
+  document.getElementById("demo").innerHTML = Date();
+}
+
+function myFunction() { //ondbclick
+  document.getElementById("demo").innerHTML = "Hello World";
+}
+</script>
+</head>
+<body>
+
+<!-- <h2>My First JavaScript</h2>
+<p id="demo">This is a paragraph.</p>
+
+<button type="button" onclick="displayDate()">Display Date</button>
+ -->
+
+<!-- onclick--text display -->
+
+<p>Click the button to trigger a function.</p>
+
+<button onclick="myFunction()">Click me</button>
+
+<p id="demo"></p>
+
+
+<!-- ondbclick -->
+
+<!-- <p ondblclick="myFunction()">Doubleclick this paragraph to trigger a function.</p>
+
+<p id="demo"></p> -->
+
+</body>
+</html> 

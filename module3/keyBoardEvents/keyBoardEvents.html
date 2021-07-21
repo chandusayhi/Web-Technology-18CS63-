@@ -1,0 +1,35 @@
+<!-- keyboard events (onkeydown, onkeypress, onkeyup) -->
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function myFunction() { //onkeydown and onkeypress
+  alert("You pressed a key inside the input field");
+}
+
+function myFunction1() { //onkeyup
+  var x = document.getElementById("fname");
+  x.value = x.value.toUpperCase();
+}
+</script>
+</head>
+<body>
+<!-- onKeyDown -->
+<!-- <p>A function is triggered when the user is pressing a key in the input field.</p>
+
+<input type="text" onkeydown="myFunction()"> -->
+
+
+<!-- onkeypress -->
+<!-- <p>A function is triggered when the user is pressing a key in the input field.</p>
+
+<input type="text" onkeypress="myFunction()">
+ -->
+
+<!-- onkeyup -->
+ <p>A function is triggered when the user releases a key in the input field. The function transforms the character to upper case.</p>
+Enter your name: <input type="text" id="fname" onkeyup="myFunction1()">
+
+
+</body>
+</html>
