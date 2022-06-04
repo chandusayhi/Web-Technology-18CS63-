@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Experiment-1</title>
+	<style type="text/css">
+		table, td, th{
+			border: 2px solid;
+			text-align: center;
+			background-color: skyblue;
+			margin: auto; 
+		}
+		input{
+			text-align: center;
+		}
+
+	</style>
+</head>
+<body>
+	<table> 
+		<tr>
+			<th colspan="4"> Simple Calculator </th>
+		</tr>
+		<tr>
+			<td>Enter Operand-1</td>
+			<td> <input type="text" id="value1" value="0"/></td>
+			<td>Enter Operand-2</td>
+			<td><input type="text"  id="value2" value="0"/></td>
+		</tr>
+		<tr> 
+			<td><input type="button" value="Addition" id="add" onclick=""/> </td>
+			<td><input type="button" value="Substraction" id="Sub" onclick=""/> </td>
+			<td><input type="button" value="Multiplication" id="mul" onclick=""/> </td>
+			<td colspan="2"><input type="button" value="Division" id="div" onclick=""/> </td>
+		</tr>
+		<tr>
+			<td> Result: </td>
+			<td> <input type="text" id="answer" value="" disabled/></td>
+			<td><input type="button" value="Clear All" id="cls" onclick=""/> </td>
+		</tr>
+	</table>
+</body>
+</html>
