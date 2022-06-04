@@ -1,0 +1,23 @@
+<!--Write a JavaScript that calculates the squares and cubes of the numbers from 0 to 10 and outputs HTML text that displays the resulting values in an HTML table format. -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Squares and Cubes</title>
+</head>
+<body>
+	<table border="1" align="center">
+		<tr>
+			<td>Number</td>
+			<td>SQUARE</td>
+			<td>CUBES</td>
+		</tr>
+		<script type="text/javascript">
+			for(var i=0;i<=10;i++)
+			{
+		document.write("<tr align='center'><td>" + i + "</td><td>" + i*i +"</td><td>" + i*i*i + "</td></tr>")
+			}
+
+		</script>
+	</table>
+</body>
+</html>
