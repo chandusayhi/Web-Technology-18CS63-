@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Photo Rating</title>
+</head>
+   <style>
+        h1 
+        {
+            position: absolute;
+            top: 30%;
+            left: 60%;
+            transform: translate(-50%, -50%);}
+    </style>
+<body>
+
+    <header>
+        <a href="#home">Home</a> | <a href="#">Places</a> | <a href="#last">Gallery</a> | <a href="#">About Us</a> | <a href="#">Search</a>
+    </header>
+
+    <h2>Malpe Beach, Udupi</h2>
+        <figure>
+            <a href="images/or3.jpg"><img src="images/or3.jpg" alt="Sunset at Maple Beach, Udupi" title="Sunset at Maple Beach, Udupi."></a>
+        </figure>
+        <p>by <a href="#">Vidya Rao</a></p>
+	<article>
+            <p>Malpe is a natural port in the Udupi District in Karnataka, India. Located at the mouth of the Malpe River about six kilometers to the west of Udupi, it is an important port and a major fishing harbor on the Karnataka coast. The town of Malpe is associated largely with settlements of the Mogaveera fisherman community.</p>
+            
+      </article>
+        
+        <section>
+            Year: 2019 <br>
+            Date: 6th Octorber <br>      
+        </section>
+
+<div>
+                            <h3>Reviews</h3>
+                            <p><strong>We missed it!</strong> <br> Cifha
+                            <img src="images/star-orange.png">
+                                <img src="images/star-orange.png">
+                                    <img src="images/star-orange.png">
+                                        <img src="images/star-orange.png">
+                                            <img src="images/star-orange.png"></p>
+                                                
+                                                <p><small>Such a lovely visuals we missed it. </small></p>
+                                                </div>
+                        <hr>
+                        
+                        <p><strong>Love click</strong> <br> Jaya
+                            <img src="images/star-orange.png">
+                                <img src="images/star-orange.png">
+                                    <img src="images/star-orange.png">
+                                        <img src="images/star-orange.png">
+                                            <img src="images/star-white.png"></p>
+                                                
+                                                <p><small>That was an amazing evening, Vidya.</small></p>
+                                                </div>
+                        <hr>
+
+                        <div>
+                            <p><strong>Nice </strong> <br> Fiona
+                            <img src="images/star-orange.png">
+                                <img src="images/star-orange.png">
+                                    <img src="images/star-orange.png">
+                                        <img src="images/star-white.png">
+                                            <img src="images/star-white.png">
+                                                </p>
+                                                
+                                                <p><small>Good one.</small></p>
+                                                </div>
+                        <hr>
+                        
+                        <div>
+                            <p id = "last"><a href="#">Home</a> |
+                            <a href="#">Places</a> |
+                            <a href="#">Gallery</a> | 
+                            <a href="#">About Us</a>
+                            </p>
+                        </div>
+                        
+                        <p><em>Copyright &copy; <time>2020</time> My Coastal Stay</em></p> 
+        <h1 id="demo"></h1>
+        <script>
+        var var1 = setInterval(inTimer, 500);
+        var fs = 5;
+        var ids = document.getElementById("demo");
+
+        function inTimer() 
+        {
+            ids.innerHTML = 'Ocean Thearpy';
+            ids.setAttribute('style', "font-size: " + fs + "px; color: red");
+            fs += 5;
+            if (fs >= 50) 
+            {
+                clearInterval(var1);
+                var2 = setInterval(deTimer, 500);
+            }
+        }
+
+        function deTimer() 
+        {
+            fs -= 5;
+            ids.innerHTML = 'Ocean Thearpy';
+            ids.setAttribute('style', "font-size: " + fs + "px; color: blue");
+            if (fs === 5) 
+            {
+                clearInterval(var2);
+                var1 = setInterval(inTimer, 500);
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
