@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+    <script type="text/javascript">
+        var str = prompt("Enter the Input", "");
+        if (!(isNaN(str))) 
+        {
+            var num, rev = 0,remainder;
+            num = parseInt(str);
+            while (num != 0)
+            {
+                remainder = num % 10;
+                num = parseInt(num / 10);
+                rev = rev * 10 + remainder;
+                prod = str * rev;
+            }
+            alert("Reverse of " + str + " is " + rev + " and their Product is "+ prod);
+        } 
+        
+        else
+            
+        {
+            str = str.toUpperCase();
+            function vowel_Count(str)
+            { 
+
+             const count = str.match(/[aeiou]/gi).length;
+             return count
+            }
+
+            alert("The given string '"+ str +"' has "+ vowel_Count(str) + " number of vowels.")
+                
+        }
+    </script>
+</body>
+
+</html>
